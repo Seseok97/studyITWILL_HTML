@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>목록 만들기</title>
+	</head>
+
+	<body>
+	<hr>
+	<h1>list - 목록만들기</h1>
+	<hr>
+	
+	<h2>목록의 종류</h2>
+		<p>
+		1. 순서 없는 목록unordered list = &lt;ul&gt; <br>
+		2. 순서 있는 목록ordered list = &lt;ol&gt; <br>
+		3. 정의 목록description list = &lt;dl&gt; <br>
+		</p>
+	<hr>
+	<h2>1. 순서 없는 목록 = &lt;ul&gt;</h2> 
+	<h4>MENU</h4>
+	<ul>
+		<li>coffee</li>
+		<li>tea</li>
+		<li>milk</li>
+	</ul>
+	<h4>전체과목</h4>
+	<ul>
+		<li><b>WEB</b>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ul>
+		</li>
+		<li>JAVA</li>
+		<li>JSP</li>
+		<li>DB</li>
+	</ul>
+	<hr>
+	<h2>2. 순서 있는 목록 = &lt;ol&gt;</h2> 
+	<ol>
+		<li>coffee</li>
+		<li>tea</li>
+		<li>milk</li>
+	</ol>
+		<h4>전체과목</h4>
+	<ol>
+		<li><b>WEB</b>
+				<ol type ="a">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+				</ol>
+		</li> <!-- </li>의 종료위치에 주의!-->
+		<li>JAVA</li>
+		<li>JSP</li>
+		<li>DB</li>
+	</ol>
+	<h4>빛의 삼원색</h4>
+		<!--주석: 각 색상별 최소 0에서 최대 255까지 값을 지정함-->
+	<ol>
+		<li>red = rgb(255,0,0) = #ff0000</li>
+		<li>green = rgb(0,255,0) = #00ff00</li>
+		<li>blue = rgb(0,0,255) = #0000ff</li>
+		<li>white = rgb(255,255,255) = #ffffff</li>
+		<li>black = rgb(0,0,0) = #000000</li>
+		<li>yello = rgb(255,255,0) = #ffff00</li>
+	</ol>
+
+	<h3>목록 앞의 모양 바꾸기 - type="1", "a", "A", "i" ,"I"</h3>
+	<ol type="1">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ol>
+	<ol type="a">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ol>
+	<ol type="A">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ol>
+	<ol type="i">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+		<li>white</li>
+	</ol>
+	<ol type="I">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+		<li>white</li>
+	</ol>
+	<h3>목록 앞의 시작 바꾸기 - start="n" or type ="" start ="n"</h3>
+	<ol start="100">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ol>
+	<ol type="a" start="4">
+		<li>red</li>
+		<li>green</li>
+		<li>blue</li>
+	</ol>
+	<h3>문제. 하위목록 만들기</h3>
+		<ol>
+			<li>A</li>
+				<ul>
+					<li>a</li>
+					<li>b</li>
+					<li>c</li>
+				</ul>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+		</ol>
+	<hr>
+	<h2>3. 정의 목록 = &lt;dl&gt;</h2>
+	<!--잘 안씀-->
+	<dl>
+		<dt>What is HTML?<dt>
+			<dd>웹페이지를 만드는 프로그램 언어.</dd>
+			<dd>Hyper Text Markup Language의 약자.</dd>
+			<dd>웹페이지의 구조를 담당.</dd>
+		<dt>What is CSS?<dt>
+			<dd>웹페이지의 디자인을 담당.</dd>
+		<dt>What is JS?<dt>
+			<dd>웹페이지의 기능을 담당.</dd>
+	</dl>
+
+	<h4>정의목록 만들기</h4>
+	<dl>
+		<dt>아이폰 12미니 장점</dt>
+			<dd>작다.</dd>
+			<dd>가볍다.</dd>
+			<dd>커엽다.</dd>
+	</dl>
+	</body>
+</html>

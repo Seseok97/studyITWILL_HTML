@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>table : 표 만들기</title>
+<style type="text/css">
+	table,th,td {border:1px solid #299;}
+ </style>
+ </head>
+<body>
+<hr>
+ <h1>Table 만들기</h1>
+	<table>
+	<tr>
+		<th>tag</th>
+		<th>설명</th>
+	</tr>
+	<tr>
+		<td>&lt;table&gt;</td>
+		<td>표를 구성:<br> 안의 내용에 따라 사이즈가 변한다 !!</td>
+	</tr>
+	<tr>
+		<td>&lt;tr&gt;</td>	
+		<td>줄을 구성</td>
+	</tr>
+	<tr>
+		<td>&lt;th&gt;</td>	
+		<td>제목칸을 구성:<br> 볼드체, 중앙정렬</td>
+	</tr>
+	<tr>
+		<td>&lt;td&gt;</td>	
+		<td>(일반)칸을 구성</td>
+	</tr>
+	</table>
+<h2>세로형 표 만들기</h2>
+<table>
+<tr>
+	<th>No.</th>
+	<th>Name</th>
+	<th>ID</th>
+ </tr>
+<tr>
+	<td>1</td>
+	<td>King</td>
+	<td>KING123</td>
+ </tr>
+<tr>
+	<td>2</td>
+	<td>Popp</td>
+	<td>PPAP456</td>
+ </tr>
+ </table>
+<h2>가로형 표 만들기</h2>
+<table>
+<tr>
+	<th>No.</th>
+	<td>1</td>
+	<td>2</td>
+</tr>
+<tr>
+	<th>Name</th>
+	<td>King</td>
+	<td>Popp</td>
+</tr>
+<tr>
+	<th>ID</th>
+	<td>KING123</td>
+	<td>PPAP456</td>
+</tr>
+ </table>
+<h2>문제</h2>
+<table>
+<tr>
+	<th>No.</th>
+	<th>ID</th>
+	<th>Name</th>
+	<th>CHECK</th>
+ </tr>
+<tr>
+	<td>1</td>
+	<td>1q2w3e4r!</td>
+	<td>aaaaa</td>
+	<td>Y</td>
+ </tr>
+<tr>
+	<td>2</td>
+	<td>1q2w3e4r@</td>
+	<td>bbbbb</td>
+	<td>Y</td>
+ </tr>
+<tr>
+	<td>3</td>
+	<td>1q2w3e4r#</td>
+	<td>ccccc</td>
+	<td>N</td>
+ </tr>
+<tr>
+	<td>4</td>
+	<td>1q2w3e4r$</td>
+	<td>ddddd</td>
+	<td>Y</td>
+ </tr>
+ </table>
+<hr>
+<h2>Table - 칸 합치기</h2>
+	<ol>
+		<li><i>가로</i>로 칸 합치기 - <b>colspan="n"</b> >> n: 가로로 합칠 셀의 수</li>
+		<li><i>세로</i>로 칸 합치기 - <b>rowspan="n"</b> >> n: 세로로 합칠 셀의 수</li>
+	 </ol>
+<h3>1. 가로로 칸 합치기, colspan</h3>
+<table>
+<tr>
+	<td>a</td>
+	<td>b</td>
+	<td>c</td>
+ </tr>
+<tr>
+	<td colspan="2">d</td>
+	<td>e</td>
+ </tr>
+<tr>
+	<td>f</td>
+	<td colspan="2">g</td>
+ </tr>
+<tr>
+	<td colspan="3">h</td>
+ </tr>
+</table>
+
+<h4>Abscent</h4>
+<table>
+<tr>
+	<td colspan="3">Abscent</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>jisoo</td>
+	<td>O</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>chun-sik</td>
+	<td>O</td>
+</tr>
+<tr>
+	<td>Boss check</td>
+	<td colspan="2"> </td>
+</tr>
+</table>
+<hr>
+
+
+<h3>2. 세로로 칸 합치기, rowspan</h3>
+<table>
+<tr>
+	<td>a</td>
+	<td rowspan="2">b</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>d</td>
+	<td rowspan="2">f</td>
+</tr>
+<tr>
+	<td>g</td>
+	<td>h</td>
+</tr>
+ </table>
+
+<br>
+<h5>내가 그냥 해본거 ,, 근데 남은 1칸짜리는 어떻게 손 대도 조지는데 우짜노 ,,</h5>
+<table>
+<tr>
+	<td colspan ="2" rowspan="2">aa</td>
+	<td colspan ="3">aa</td>
+	<td rowspan="4">aa</td>
+</tr>
+<tr>
+	<td>ee</td>
+	<td>ee</td>
+	<td>ee</td>
+
+</tr>
+<tr>
+	<td rowspan="4">aa</td>
+	<td rowspan="3">aa</td>
+	<td colspan="2" rowspan="2">aa</td>
+	<td >ee</td>
+
+</tr>
+<tr>
+	<td>ee</td>
+</tr>
+<tr>
+	<td colspan ="2">aa</td>
+	<td colspan="2" rowspan="2">aa</td>
+</tr>
+<tr>
+	<td colspan ="3">aa</td>
+</tr>
+ </table>
+
+<h4>문제. 예약시트1</h4>
+<table>
+<tr>
+	<td rowspan="5">확<br>인</td>
+</tr>
+<tr>
+	<td rowspan="2">예약</td>
+	<td>테이블</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>홀</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td rowspan="2">취소</td>
+	<td>테이블</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>홀</td>
+	<td>0</td>
+</tr>
+ </table>
+
+<h4>문제. 예약시트1 강사님 작성</h4>
+<table>
+<tr>
+	<td rowspan="4">확<br>인</td>
+	<td rowspan="2">예<br>약</td>
+	<td>테이블</td>
+	<td>3</td>
+</tr>
+<tr>
+	<td>홀</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td rowspan="2">취<br>소</td>
+	<td>테이블</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>홀</td>
+	<td>0</td>
+</tr>
+ </table>
+
+<h4>문제. 세로로 칸합치기 2</h4>
+<table>
+<tr>
+	<td rowspan="2">예<br>약</td>
+	<td rowspan="2">성<br>인</td>
+	<td>남 15</td>
+	<td>결재</td>
+ </tr>
+<tr>
+
+	<td>여 17</td>
+	<td rowspan="4"></td>
+ </tr>
+<tr>
+	<td rowspan="3">추<br>가</td>
+	<td>가족</td>
+	<td>3팀</td>
+ </tr>
+<tr>
+	<td>유아</td>
+	<td rowspan="2"> 각 5</td>
+ </tr>
+<tr>
+	<td>초등</td>
+ </tr>
+ </table>
+
+<h4>문제. 복합 칸 합치기</h4>
+<table>
+	<tr>
+		<th colspan="4">아이티윌 게스트하우스 예약 안내</th>
+	</tr>
+	<tr>
+		<th>방 이름</th>
+		<th>대상</th>
+		<th>크기</th>
+		<th>가격</th>
+	</tr>
+	<tr>
+		<th>유채방</th>
+		<td>여성 도미토리</td>
+		<td rowspan="3">4인실</td>
+		<td rowspan ="4">1인 20,000원</td>
+	</tr>
+	<tr>
+		<th rowspan="2">동백방</th>
+		<td>남성 도미토리</td>
+	</tr>
+	<tr>
+		<td>가족 1팀</td>
+	</tr>
+	<tr>
+		<th colspan="2">천혜향방</th>
+		<td>2인실</td>
+	</tr>
+	<tr>
+		<td colspan="4"><b>바깥채 단독 : 전화문의</b> (010-777-5454)</td>
+	</tr>
+</table>
+
+
+
+ </body>
+</html>
