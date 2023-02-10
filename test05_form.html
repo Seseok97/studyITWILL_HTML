@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+	<title>form</title>
+ </head>
+ <body>
+	<hr>
+	<h1>form으로 사용자가 정보전송 가능한 페이지 만들기</h1>
+	<!-- form은 사용자가 서버에 데이터를 전송하는 태그임. -->
+	<h2>form tag의 속성</h2>
+	<form action="test.jsp" method="post">
+		<p>
+		action="" 				> 사용자가 전송한 정보를 받을 서버파일<br>
+		method="post/get"			> 정보를 전송하는 방식<br>
+		</p>
+	<hr>
+	<h2>여러 form 요소</h2>
+	<ul>
+		<li>label for-id로 짝을 맞춰주면 label 태그를 받은쪽에 클릭하여 태그된 창에 커서를 보낼 수 있다.</li><br>
+		<li>for-id로 짝을 맞춰주는것은 label이 어떤 input창을 설명하고 있는지 표시해 준다.</li><br>
+		<li>id값은 주민번호같은 역할을 하고, 영문자로 구성되어야 한다.</li><br>
+		<li>max/minlength="n"으로 입력값의 최대/최소 길이를 정할 수 있다.</li><br>
+		<li>size="n"으로 입력창의 길이를 정할 수 있다. 현재는 잘 사용하지 않는다.</li><br>
+		<li>&lt;label&gt;&lt;input type=""&gt; &lt;/label&gt;</li><br>
+			<ul>
+				<li>위와같은 형태로 표현 가능하지만, 소속이 명확한 경우에만 사용해야 한다.</li><br>
+				<li>사용 가능한 태그가 줄어들기 때문에 실제로 활용하는 범위는 좁다.</li><br>
+		 	</ul>
+		<li></li>
+	 </ul>
+	<ol>
+		<li>
+			&lt;input type="text"&gt;<br>
+			<label for="nm">TEXT</label> <input type="text" id="nm"><br>
+			주관식-한 줄 글상자<br>
+			
+			<label for="idd">ex) ID</label> <input type="text" id="idd" maxlength="12" size="13">
+		 </li>
+		<li>
+			&lt;input type="password"&gt;<br>
+			<label for="pw">PASSWORD</label> <input type="password" id="pw"><br>
+			주관식-한 줄 암호상자<br>
+			<label for="jmn">ex) 주민번호 뒷자리</label> <input type="password" id="jmn" maxlength="7" size="13">
+		 </li>
+		<li>
+			&lt;input type="checkbox"&gt;<br>
+			CHECKBOX<input type="checkbox"><br>
+			다중 선택형 객관식, 체크박스<br>
+			> checked="checked" 속성을 부여하여 초기값을 정할수 있다.<br>
+			ex)<br>
+			What is your favorite color?<br>
+			<label><input type="checkbox" checked="checked">Red</label><br>
+			<label><input type="checkbox">Yellow</label><br>
+			<label><input type="checkbox">Blue</label><br>
+			<label><input type="checkbox">Black</label><br>
+			<label><input type="checkbox" checked="checked">White</label><br>
+		 </li>
+		<li>
+			&lt;input type="radio" name=" "&gt;<br>
+			RADIO<input type="radio"><br>
+			단일 선택형 객관식, 라디오<br>
+			> checked="checked" 속성을 부여하여 초기값을 정할수 있다.<br>
+			> name=" " 속성을 부여하여 선택사항을 제한하여야 한다. 예제 아래 꼭 참고.<br>
+			ex)<br>
+			Do you like Red?<br>
+			<label><input type="radio" name="red" checked="checked">Yes</label>
+			<label><input type="radio" name="red">No</label><br>
+			<label><input type="radio" name="red">I can't see Red</label><br>
+			Do you like Black?<br>
+			<label><input type="radio" name="black" checked="checked">Yes</label>
+			<label><input type="radio" name="black">No</label><br>
+			>> 위 예제의 경우,<br>
+			>>  &lt;input type="radio" name="each color"&gt; 로 name=" " 속성이 부여되어 있다.<br>
+			>>  단일선택을 위해서는 name 속성부여가 필수적이다.<br>
+
+		 </li>
+		<li>
+			&lt;input type="hidden"&gt;<br>
+			<input type="hidden" value="silver"><br>
+			사용자에게 보이지않는 정보를 전송하는 히든<br>
+			> 진짜 아무 티도 안남 <br>
+		 </li>
+		<li>
+			&lt;input type="file"&gt;<br>
+			FILE<label for="ph"></label><input type="file" id="ph"><br>
+			지정한 파일을 전송해주는 파일<br>
+			ex)<br>
+			<label for="fl">주민등록증 사본</label><input type="file" id="fl"><br>
+		 </li>
+		<li>
+			&lt;input type="button"&gt;<br>
+			BUTTON<input type="button"><br>
+			무반응 버튼<br>
+			 > value=" " 속성을 부여하여 버튼의 이름을 변경할 수 있다. 예제 참고.<br>
+			 > onclick=" " 속성을 부여하여 상호작용을 만들수 있다.<br>
+			ex)<br>
+			<input type="button" value="Click!" onclick="alert('WHAT?')">
+			<input type="button" value="Cancel" onclick="alert('Are you sure?')">
+
+		 </li>
+		<li>
+			&lt;input type="reset"&gt;<br>
+			RESET <input type="reset"><br>
+			모든 입력값을 초기화하는 리셋 버튼<br>
+			 > value=" " 속성을 부여하여 버튼의 이름을 변경할 수 있다. 예제 참고.<br>
+			ex)<br>
+			<input type="reset" value="취소">
+			<input type="reset" value="되돌리기">
+		 </li>
+		<li>
+			&lt;input type="submit"&gt;<br>
+			SUBMIT <input type="submit"><br>
+			서버에 전송하는 서브밋 버튼<br>
+		 	 > form코드의 action속성에 test.jsp를 입력해뒀기때문에,<br>
+			 > 해당 서버파일을 통하여 서버로 form 내용을 전달한다.<br>
+			 > value=" " 속성을 부여하여 버튼의 이름을 변경할 수 있다. 예제 참고.<br>
+			ex)<br>
+			<input type="submit" value="전송">
+			<input type="submit" value="로그인">
+		 </li>
+		<li>
+			&lt;input type="image" src=""&gt;<br>
+			IMAGE <input type="image" src="img_submit.gif" width="48" height="48"><br>
+			서브밋 버튼을 대체하는 이미지 버튼 <br>
+			 > submit 버튼의 역할을 할 수 있고, 다른 버튼의 역할은 하지 못한다.<br>
+			 > src="" 속성을 부여하여 버튼의 이미지를 변경할 수 있다.""안에는 확장자명을 포함한 경로를 지정해야 한다.<br>
+			 > src 속성을 부여할 때는, html파일과 이미지 파일이 같은 폴더 안에 있어야 한다.<br>
+			 > width/height ="n" 속성을 추가로 부여하여 이미지 크기를 조절할 수 있다.<br>
+			ex)<br>
+			<input type="image" src="346167.png" width="20" height="20"> << 실행시 submit 역할 수행<br>
+		 </li>
+		<li>
+			&lt;textarea&gt; .... &lt;/textarea&gt;<br>
+			TEXTAREA <textarea>textarea</textarea><br>
+			주관식 - 큰 글 상자<br>
+			> cols="n", rows="n" 속성을 부여하여 크기를 조절할 수 있다.<br>
+			> maxlength="n" 속성을 부여하여 최대 작성 길이를 조절할 수 있다.<br>
+			ex)<br>
+			<textarea cols="50" rows="2" maxlength="20">하고싶은 말</textarea>
+			
+		 </li>
+		<li>
+			&lt;select&gt; ....&lt;option&gt;....&lt;/option&gt;.... &lt;/select&gt;<br>
+			SELECT <select></select><br>
+			객관식 - 펼침 목록<br>
+			> selected(="selected") 속성을 부여하여 초기값을 설정할 수 있다.<br>
+			ex)<br>
+			What is your job?
+			<select>
+				<option>Soldier</option>
+				<option>Teacher</option>
+				<option selected="selected">Student</option>
+				<option>Taxi driver</option>
+				<option>Police officer</option>
+			 </select>
+			<br>
+			What is your name?
+			<select>
+				<option>Johnson</option>
+				<option selected="selected">Bob</option>
+				<option>James</option>
+				<option>Bell</option>
+				<option>Thomas</option>
+			 </select>
+		 </li>
+		<li>
+			&lt;input type=""&gt;<br>
+		 </li>
+		<li>
+			&lt;input type=""&gt;<br>
+		 </li>
+ 	 </ol>
+ </body>
+</html>
