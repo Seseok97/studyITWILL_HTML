@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<fieldset>
+<legend>html5에서 추가된 input 속성</legend>
+<form>
+<ol>
+<li><b>autofocus:</b> <input type="text" autofocus="autofocus"></li> 
+<!-- 자동으로 focus시켜준다. -->
+<li><label for="name"><b>autocomplete:</b> </label><input type="text" id="name" autocomplete="on"></li>
+<!-- 자동완성 기능, 기존의 기록이 있어야 하고, on/off로 설정을 변경할 수 있다. -->
+<li><b>placeholder:</b> <input type="text" placeholder="'-'를 제외하고 입력해주세요."></li>
+<!-- 입력칸 내부에 비어있을때만 나타나는 텍스트를 입력한다. 입력창과 관련된 정보를 입력하는것이 좋다. -->
+<li><label><b>required:</b> <input type="text" required="required"></label></li>
+<!-- 필수입력요소로 지정한다. -->
+<li><b>value:</b> <input type="text" value="기본값" readonly="readonly"> </li>
+<!-- value는 사전에 지정값을 대입하는 것이고, readonly는 수정이 불가능하게 고정시키는 것이다. 값은 전송된다. -->
+<li><label><b>disabled:</b> <input type="text" value="value" disabled="disabled"></label></li>
+<!-- disabled는 해당 요소를 사용불가능하게 지정한다. 값이 전송되지 않는다. -->
+</ol>
+</form>
+</fieldset>
+
+
+</body>
+</html>
