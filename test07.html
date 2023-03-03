@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> a 태그로 링크걸기</title>
+</head>
+<body>
+	<h1> a 태그로 링크걸기</h1>
+		<b>&lt;a href="https://www.naver.com"&gt;네이버&lt;/a&gt;</b><hr>
+		링크가 있는 텍스트는 밑줄이 생기고, 마우스 오버에 따라 커서가 손모양으로 바뀐다.<br>
+		색상은 파랑(미방문 링크),빨강(활성화 링크),보라(방문링크)로 나타난다. CSS를 활용하면 다양하게 변경 가능 !!
+		
+		<ol>
+			<li>절대경로로 링크 걸기 <br>
+				<ul>
+					<li><a href="https://pixabay.com/ko/" target="_blank"> img free site</a></li>
+					<li><a href="https://www.w3schools.com/" target="_blank" title="웹 관련 공부를 할수 있는 사이트 !"> 웹수업 단골링크</a></li>
+				</ul>
+			</li>
+			<li>상대경로로 링크 걸기 <br>
+				<ul>
+					<li>*.htm / *.html<br>
+						<a href="test06.html" target="_blank"> test06</a></li>					
+					<li>*.jpg / *.png / *.gif <br>
+						<a href="../web_img/gif/angry-2498_256.gif" target="_blank"> gif : 클릭하면 이동</a><br>
+						<a href="../web_img/pexels-fox-1386422.jpg" target="_blank"> jpg : 클릭하면 이동</a><br>
+						<a href="../web_img/9881.mp4" target="_blank"> mp4 : 클릭하면 이동</a>
+					</li>
+					<li>*.txt<br>
+						<a href="form-test_완성.htm" target="_blank"> txt</a></li>	
+					<li>웹 브라우저가 처리하지 못하는 종류의 파일(예시는 .zip // .hwp 등등이 포함됨)<br>
+						<a href="../web_img/testZip.zip" target="_blank" title="클릭시 다운로드 됩니다."> zip</a></li>	
+				</ul>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h2>링크를 여는 방식 지정! = target=""</h2>
+		<fieldset>
+		<legend>_blank로 링크가 걸린 이미지</legend>
+			<a href="https://www.naver.com" target="_blank" title="네이버"><img src="01 NAVER Logo_Green.png" width=80 height=30></a>
+			<a href="https://www.daum.net" target="_blank" title="다음"><img src="20200723055344399.png" width=100 height=40></a>
+			<a href="https://www.youtube.com" target="_blank" title="유튜브"><img src="free-icon-youtube-1384060.png" width=100 height=40></a>
+		</fieldset>
+			<ul>
+				<li>_self : 기본값. 현재창에서 열기</li>
+				<li><b>_blank : 새 탭에서 열기 >> 많이 사용된다!</b></li>
+				<li>_top : 프라임구조로 나뉘지 않고 전체에서 열기</li>
+				<li>_parent : 한단계 상위(부모)창에서 열림</li>
+			</ul>
+			
+		<hr>
+			
+		<h3>title="" 툴팁 추가 가능.</h3>
+		<img alt="tooltip" src="45.png" title="툴팁 예시.(예문: 수업중 필기 일부 캡쳐)" width=150 height=150>
+		
+		<hr>
+		
+		
+		<h3>썸네일 만들기 !</h3>
+		<a href="../web_img/castle-g033bc11da_640.jpg" target="_blank" title="원본"><img src="../web_img/castle-g033bc11da_640.jpg" width=50 height=50></a>
+		<a href="../web_img/pexels-fox-1386422.jpg" target="_blank" title="원본"><img src="../web_img/pexels-fox-1386422.jpg" width=50 height=50></a>
+		<a href="../web_img/grass-g21a156aa3_640.jpg" target="_blank" title="원본"><img src="../web_img/grass-g21a156aa3_640.jpg" width=50 height=50></a>
+		<a href="../web_img/castle-ga05f24ea5_640.jpg" target="_blank" title="원본"><img src="../web_img/castle-ga05f24ea5_640.jpg" width=50 height=50></a>
+		
+		<hr>
+		
+		<h3>top링크 만들기!</h3>
+		<a href="#"><img src="../web_img/download.jpg" width=30 height=30></a>
+		
+		<hr>
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</body>
+</html>
