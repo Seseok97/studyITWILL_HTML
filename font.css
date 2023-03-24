@@ -2,6 +2,10 @@
    /* 1. font-size */
 #sec01 {font-size: 20px;}
 
+body {
+	font-family: 'Nanum Gothic Coding', monospace;
+}
+
 /* px */
 .fs01, .fs02, .fs03 {
 	/* 그룹선택자 */
@@ -29,7 +33,7 @@
 .fs11 {font-size: 75%;}
 .fs12 {font-size: 125%;}
 
-/*  */
+/* 2. font-weight */
 .fw01 {font-weight: 100;}
 .fw02 {font-weight: 200;}
 .fw03 {font-weight: 300;}
@@ -40,12 +44,33 @@
 .fw08 {font-weight: 800;}
 .fw09 {font-weight: 900;}
 .fw10 {font-weight: bold;}
-.fw11 {font-weight: normal;}
-.fw12 {font-weight: normal;}
+.fw11 {font-weight: normal;
+		color: #f00;}
+.fw12>strong {font-weight: normal;
+		color: #00f;}
+		
+/* 3. font-style */
+.fst01{font-style: italic;}
+.fst02{font-style: oblique;}
+.fst03{font-style: normal;}
+.fst04>em {font-style: normal;}
 
+/* 4. font-family */
+.ff01 {font-family: "Verdana","Helvetica",sans-serif;}
+.ff02 {font-family: "Times New Roman","Georgia",serif;}
+.ff03 {font-family: "Lucida console","Monaco",monospace;}
+.ff04 {font-family: "Brush Script MT","Lucida Handwriting",cursive;}
+.ff05 {font-family: "Papyrus","Copperplate",fantasy;}
+.ff06 {font-family: 'Edu NSW ACT Foundation', cursive;}
 
-
-
+.nm {font-family: 'Gugi', cursive;}
+.go {font-family: 'Alkatra', cursive;}
+/*
+font-family: 'Alkatra', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Gugi', cursive;
+font-family: 'Nanum Gothic Coding', monospace;
+*/
 
 
 
