@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.h:hover{
+	font-size: 30px;
+	font-weight: bold;
+	transition: 1s;
+	color: blue;
+}
+/*1. padding의 방향별 지정 속성*/
+#ul01>li{border: 1px solid #0a3;
+		width: 330px}
+.pt {padding-top: 30px;}
+.pr {text-align:right;
+	padding-right: 30px;}
+.pb {padding-bottom: 30px;}
+.pl {padding-left: 30px;}
+
+/*2. padding의 값 갯수별 지정법*/
+.pn01,.pn02,.pn03,.pn04{border: 1px solid #0ff;
+						width:330px}
+.pn01 {padding:0.5em;}
+.pn02 {padding:1em 0.5em;}
+.pn03 {padding: 1em 0.5em 2em;}
+.pn04 {padding: 1em 1em 1em 1em;}
+
+/*form*/
+.p01{padding: 0.5em;}
+.p02{padding: 0.5em 1em;}
+.p03{padding-left: 0.7em;}
+/* .p04{padding: 4px 0px 8px 0px;} */
+.p04{padding-top:4px;
+	 padding-bottom:8px;}
+.button01{padding: 6px 50px;
+			text-transform: lowercase;}
+.button01:hover{padding: 8px 70px;
+				background-color: #7af;
+				border: 2px solid #fff;
+				text-transform: uppercase;}
+.button01:active {padding: 7px 65px;
+				background-color: #5af;
+				border: 3px solid #000;
+				text-transform: uppercase;
+				font-weight: bold;}
+		
+#pg>a {background-color: #8ef;
+		padding: 4px 10px;
+		text-decoration: none;}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
