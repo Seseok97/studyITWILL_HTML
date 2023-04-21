@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 1. img float: left; */
+
+#sec01, #sec02 {display: inline-block;
+				width: 45%;}
+
+#sec01 img{float: left; /* 2차원 평면도에 있던 이미지 파일을 3차원으로 한 층 올리는 형태가 됨. */
+			margin-right: 1em;}
+			
+/* 클래스 지정 > "." // id 지정 > "#" */
+			
+/* 2. img float: right; */
+#sec02 img{float: right; 
+			margin-right: 1em;}
+			
+/* 3. p tag float: left; */
+#sec03{overflow: hidden;}
+
+#sec03>p{
+	border:1px solid red;
+	float: left;
+	width: 400px;
+}
+
+/* 4. p tag float: right; */
+#sec04{overflow: hidden;}
+
+#sec04>p{
+	border:1px solid red;
+	float: right;
+	width: 400px;
+}
+
+.p07{
+	clear: both;
+}
